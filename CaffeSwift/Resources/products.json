@@ -1,0 +1,67 @@
+[
+    
+    {
+        "reference": "001-567",
+        "name": "Birthday Cupcake",
+        "price": 2.49,
+        "image": "birthday-cupcakes",
+        "calories": 125,
+        "description": "Birthday Cupcakes are the perfect dessert for your special celebration!"
+    },
+    {
+        "reference": "002-567",
+        "name": "Chocolate Chip Cookie",
+        "price": 1.99,
+        "image": "chocolate-chip-cookies",
+        "calories": 150,
+        "description": "Crispy edges, a buttery chew, and plenty of chocolate chunks in every bite."
+    },
+    {
+        "reference": "003-567",
+        "name": "Truffle Pralines",
+        "price": 12.99,
+        "image": "pralines",
+        "calories": 110,
+        "description": "Rich praline chocolate truffles made with homemade maple praline butter, chocolate, and raw cacao butter, coated in a dark chocolate shell."
+    },
+    {
+        "reference": "004-567",
+        "name": "Macarons",
+        "price": 10.49,
+        "image": "macarons",
+        "calories": 95,
+        "description": "Fabulous colored, bite-sized macarons."
+    },
+    {
+        "reference": "005-567",
+        "name": "Donuts",
+        "price": 4.99,
+        "image": "donuts",
+        "calories": 78,
+        "description": "Our delicious donut flavors rotate, with 16 options available to choose from daily."
+    },
+    {
+        "reference": "006-567",
+        "name": "Raspberry Cream Cupcake",
+        "price": 2.99,
+        "image": "raspberry-cream-cupcakes",
+        "calories": 100,
+        "description": "Vanilla cupcakes with raspberry cream frosting."
+    },
+    {
+        "reference": "007-567",
+        "name": "Marmalade Biscuits",
+        "price": 1.29,
+        "image": "marmalade-biscuits",
+        "calories": 95,
+        "description": "These marmalade biscuits use sweet and tangy marmalade to create the ultimate accompaniment for any tea break."
+    },
+    {
+        "reference": "008-567",
+        "name": "Marble Cake",
+        "price": 0.99,
+        "image": "marble-cake",
+        "calories": 90,
+        "description": "With swirls of tender vanilla and fudgy chocolate cake, this marble cake looks fancy but tastes like pure old-fashioned goodness."
+    }
+]

@@ -1,0 +1,473 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		EA0E368B293BC5CD0097AC15 /* CaffeSwiftApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA0E368A293BC5CD0097AC15 /* CaffeSwiftApp.swift */; };
+		EA0E368D293BC5CD0097AC15 /* ProductListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA0E368C293BC5CD0097AC15 /* ProductListView.swift */; };
+		EA0E368F293BC5CE0097AC15 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EA0E368E293BC5CE0097AC15 /* Assets.xcassets */; };
+		EA0E3692293BC5CE0097AC15 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EA0E3691293BC5CE0097AC15 /* Preview Assets.xcassets */; };
+		EA0E3699293BCBF30097AC15 /* products.json in Resources */ = {isa = PBXBuildFile; fileRef = EA0E3698293BCBF30097AC15 /* products.json */; };
+		EA0E36A2293BCD0B0097AC15 /* Product.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA0E36A1293BCD0B0097AC15 /* Product.swift */; };
+		EA0E36A4293CF11F0097AC15 /* OrderViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA0E36A3293CF11F0097AC15 /* OrderViewModel.swift */; };
+		EA0E36A7293CF1900097AC15 /* Bundle+Codable.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA0E36A6293CF1900097AC15 /* Bundle+Codable.swift */; };
+		EA0E36AD293CF2150097AC15 /* CartView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA0E36A8293CF2150097AC15 /* CartView.swift */; };
+		EA0E36AE293CF2150097AC15 /* CheckoutView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA0E36A9293CF2150097AC15 /* CheckoutView.swift */; };
+		EA0E36AF293CF2150097AC15 /* ProductView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA0E36AA293CF2150097AC15 /* ProductView.swift */; };
+		EA0E36B1293CF2150097AC15 /* ProductDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA0E36AC293CF2150097AC15 /* ProductDetailView.swift */; };
+		EA5978192964CE5F009FD0CF /* FirebaseDynamicLinks in Frameworks */ = {isa = PBXBuildFile; productRef = EA5978182964CE5F009FD0CF /* FirebaseDynamicLinks */; };
+		EA59781F2965036B009FD0CF /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = EA59781E2965036B009FD0CF /* GoogleService-Info.plist */; };
+		EA59782529665575009FD0CF /* DynamicLinkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA59782429665575009FD0CF /* DynamicLinkManager.swift */; };
+		EA5978272967C88C009FD0CF /* DeepLinkHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA5978262967C88C009FD0CF /* DeepLinkHandler.swift */; };
+		EA5978292967C8E5009FD0CF /* DeepLinkKey.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA5978282967C8E5009FD0CF /* DeepLinkKey.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		EA0E3687293BC5CD0097AC15 /* CaffeSwift.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CaffeSwift.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		EA0E368A293BC5CD0097AC15 /* CaffeSwiftApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CaffeSwiftApp.swift; sourceTree = "<group>"; };
+		EA0E368C293BC5CD0097AC15 /* ProductListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductListView.swift; sourceTree = "<group>"; };
+		EA0E368E293BC5CE0097AC15 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		EA0E3691293BC5CE0097AC15 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		EA0E3698293BCBF30097AC15 /* products.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = products.json; sourceTree = "<group>"; };
+		EA0E36A1293BCD0B0097AC15 /* Product.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Product.swift; sourceTree = "<group>"; };
+		EA0E36A3293CF11F0097AC15 /* OrderViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderViewModel.swift; sourceTree = "<group>"; };
+		EA0E36A6293CF1900097AC15 /* Bundle+Codable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Bundle+Codable.swift"; sourceTree = "<group>"; };
+		EA0E36A8293CF2150097AC15 /* CartView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CartView.swift; sourceTree = "<group>"; };
+		EA0E36A9293CF2150097AC15 /* CheckoutView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CheckoutView.swift; sourceTree = "<group>"; };
+		EA0E36AA293CF2150097AC15 /* ProductView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProductView.swift; sourceTree = "<group>"; };
+		EA0E36AC293CF2150097AC15 /* ProductDetailView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProductDetailView.swift; sourceTree = "<group>"; };
+		EA59781E2965036B009FD0CF /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		EA5978202965228B009FD0CF /* CaffeSwift.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = CaffeSwift.entitlements; sourceTree = "<group>"; };
+		EA59782429665575009FD0CF /* DynamicLinkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DynamicLinkManager.swift; sourceTree = "<group>"; };
+		EA5978262967C88C009FD0CF /* DeepLinkHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeepLinkHandler.swift; sourceTree = "<group>"; };
+		EA5978282967C8E5009FD0CF /* DeepLinkKey.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeepLinkKey.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		EA0E3684293BC5CD0097AC15 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EA5978192964CE5F009FD0CF /* FirebaseDynamicLinks in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		EA0E367E293BC5CD0097AC15 = {
+			isa = PBXGroup;
+			children = (
+				EA0E3689293BC5CD0097AC15 /* CaffeSwift */,
+				EA0E3688293BC5CD0097AC15 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		EA0E3688293BC5CD0097AC15 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				EA0E3687293BC5CD0097AC15 /* CaffeSwift.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		EA0E3689293BC5CD0097AC15 /* CaffeSwift */ = {
+			isa = PBXGroup;
+			children = (
+				EA5978202965228B009FD0CF /* CaffeSwift.entitlements */,
+				EA59781E2965036B009FD0CF /* GoogleService-Info.plist */,
+				EA0E368A293BC5CD0097AC15 /* CaffeSwiftApp.swift */,
+				EA59782129662508009FD0CF /* DynamicLink */,
+				EA0E369B293BCC2A0097AC15 /* Models */,
+				EA0E369A293BCC1E0097AC15 /* ViewModels */,
+				EA0E369C293BCC2E0097AC15 /* Views */,
+				EA0E369D293BCC410097AC15 /* Resources */,
+				EA0E368E293BC5CE0097AC15 /* Assets.xcassets */,
+				EA0E3690293BC5CE0097AC15 /* Preview Content */,
+			);
+			path = CaffeSwift;
+			sourceTree = "<group>";
+		};
+		EA0E3690293BC5CE0097AC15 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				EA0E3691293BC5CE0097AC15 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		EA0E369A293BCC1E0097AC15 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				EA0E36A3293CF11F0097AC15 /* OrderViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		EA0E369B293BCC2A0097AC15 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				EA0E36A1293BCD0B0097AC15 /* Product.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		EA0E369C293BCC2E0097AC15 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				EA0E368C293BC5CD0097AC15 /* ProductListView.swift */,
+				EA0E36AC293CF2150097AC15 /* ProductDetailView.swift */,
+				EA0E36AA293CF2150097AC15 /* ProductView.swift */,
+				EA0E36A8293CF2150097AC15 /* CartView.swift */,
+				EA0E36A9293CF2150097AC15 /* CheckoutView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		EA0E369D293BCC410097AC15 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				EA0E36A5293CF1810097AC15 /* Helpers */,
+				EA0E3698293BCBF30097AC15 /* products.json */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		EA0E36A5293CF1810097AC15 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				EA0E36A6293CF1900097AC15 /* Bundle+Codable.swift */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		EA59782129662508009FD0CF /* DynamicLink */ = {
+			isa = PBXGroup;
+			children = (
+				EA59782429665575009FD0CF /* DynamicLinkManager.swift */,
+				EA5978262967C88C009FD0CF /* DeepLinkHandler.swift */,
+				EA5978282967C8E5009FD0CF /* DeepLinkKey.swift */,
+			);
+			path = DynamicLink;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		EA0E3686293BC5CD0097AC15 /* CaffeSwift */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EA0E3695293BC5CE0097AC15 /* Build configuration list for PBXNativeTarget "CaffeSwift" */;
+			buildPhases = (
+				EA0E3683293BC5CD0097AC15 /* Sources */,
+				EA0E3684293BC5CD0097AC15 /* Frameworks */,
+				EA0E3685293BC5CD0097AC15 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = CaffeSwift;
+			packageProductDependencies = (
+				EA5978182964CE5F009FD0CF /* FirebaseDynamicLinks */,
+			);
+			productName = CaffeSwift;
+			productReference = EA0E3687293BC5CD0097AC15 /* CaffeSwift.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		EA0E367F293BC5CD0097AC15 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1410;
+				LastUpgradeCheck = 1410;
+				TargetAttributes = {
+					EA0E3686293BC5CD0097AC15 = {
+						CreatedOnToolsVersion = 14.1;
+					};
+				};
+			};
+			buildConfigurationList = EA0E3682293BC5CD0097AC15 /* Build configuration list for PBXProject "CaffeSwift" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = EA0E367E293BC5CD0097AC15;
+			packageReferences = (
+				EA5978172964CE5F009FD0CF /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+			);
+			productRefGroup = EA0E3688293BC5CD0097AC15 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				EA0E3686293BC5CD0097AC15 /* CaffeSwift */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		EA0E3685293BC5CD0097AC15 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EA0E3699293BCBF30097AC15 /* products.json in Resources */,
+				EA59781F2965036B009FD0CF /* GoogleService-Info.plist in Resources */,
+				EA0E3692293BC5CE0097AC15 /* Preview Assets.xcassets in Resources */,
+				EA0E368F293BC5CE0097AC15 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		EA0E3683293BC5CD0097AC15 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EA5978292967C8E5009FD0CF /* DeepLinkKey.swift in Sources */,
+				EA5978272967C88C009FD0CF /* DeepLinkHandler.swift in Sources */,
+				EA0E36AF293CF2150097AC15 /* ProductView.swift in Sources */,
+				EA0E36B1293CF2150097AC15 /* ProductDetailView.swift in Sources */,
+				EA0E36AD293CF2150097AC15 /* CartView.swift in Sources */,
+				EA59782529665575009FD0CF /* DynamicLinkManager.swift in Sources */,
+				EA0E368D293BC5CD0097AC15 /* ProductListView.swift in Sources */,
+				EA0E368B293BC5CD0097AC15 /* CaffeSwiftApp.swift in Sources */,
+				EA0E36AE293CF2150097AC15 /* CheckoutView.swift in Sources */,
+				EA0E36A2293BCD0B0097AC15 /* Product.swift in Sources */,
+				EA0E36A4293CF11F0097AC15 /* OrderViewModel.swift in Sources */,
+				EA0E36A7293CF1900097AC15 /* Bundle+Codable.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		EA0E3693293BC5CE0097AC15 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.1;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		EA0E3694293BC5CE0097AC15 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		EA0E3696293BC5CE0097AC15 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = CaffeSwift/CaffeSwift.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"CaffeSwift/Preview Content\"";
+				DEVELOPMENT_TEAM = 9G3SM93N6Z;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = "Caffe Swift";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.danijelavrzan.CaffeSwift;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		EA0E3697293BC5CE0097AC15 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = CaffeSwift/CaffeSwift.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"CaffeSwift/Preview Content\"";
+				DEVELOPMENT_TEAM = 9G3SM93N6Z;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = "Caffe Swift";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.danijelavrzan.CaffeSwift;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		EA0E3682293BC5CD0097AC15 /* Build configuration list for PBXProject "CaffeSwift" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EA0E3693293BC5CE0097AC15 /* Debug */,
+				EA0E3694293BC5CE0097AC15 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EA0E3695293BC5CE0097AC15 /* Build configuration list for PBXNativeTarget "CaffeSwift" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EA0E3696293BC5CE0097AC15 /* Debug */,
+				EA0E3697293BC5CE0097AC15 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		EA5978172964CE5F009FD0CF /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/firebase/firebase-ios-sdk";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		EA5978182964CE5F009FD0CF /* FirebaseDynamicLinks */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = EA5978172964CE5F009FD0CF /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseDynamicLinks;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = EA0E367F293BC5CD0097AC15 /* Project object */;
+}

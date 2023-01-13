@@ -22,6 +22,6 @@ Replace `caffeswift.page.link` with the URL you'll use for your dynamic link. Th
 
 ---
 
-Please know that this is one of the ways you can implement dynamic links in multiple ways. This is one of the examples.
+Please know that this is one of the ways you can implement dynamic links. There are different approaches you could take.
 
 Hope you've enjoyed my talk and happy coding!
